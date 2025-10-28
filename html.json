@@ -1,0 +1,81 @@
+{
+  "Plantilla base PHP": {
+    "prefix": "basephp!",
+    "body": [
+      "<?php",
+      "",
+      "?>",
+      "",
+      "<!DOCTYPE html>",
+      "<html lang=\"es\">",
+      "",
+      "<head>",
+      "    <meta charset=\"UTF-8\" />",
+      "    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />",
+      "    <title>titulo</title>",
+      "    <link rel=\"stylesheet\" href=\"https://cdn.simplecss.org/simple.min.css\" />",
+      "</head>",
+      "",
+      "<body>",
+      "    <header>",
+      "        <h1>Titulo</h1>",
+      "    </header>",
+      "",
+      "    <main>",
+      "        ",
+      "    </main>",
+      "",
+      "    <footer>",
+      "        <p>Zequi</p>",
+      "    </footer>",
+      "</body>",
+      "",
+      "</html>"
+    ],
+    "description": "Plantilla base PHP + HTML con bloque PHP inicial y estructura simple.css"
+  },
+
+  "Formulario básico": {
+    "prefix": "formulario!",
+    "body": [
+      "<form action=\"\" method=\"post\">",
+      "    <label for=\"name\">Nombre:</label>",
+      "    <input type=\"text\" id=\"name\" name=\"name\" required />",
+      "",
+      "    <label for=\"email\">Correo:</label>",
+      "    <input type=\"email\" id=\"email\" name=\"email\" required />",
+      "",
+      "    <label for=\"mensaje\">Mensaje:</label>",
+      "    <textarea id=\"mensaje\" name=\"mensaje\" rows=\"4\" required></textarea>",
+      "",
+      "    <button type=\"submit\">Enviar</button>",
+      "</form>"
+    ],
+    "description": "Formulario HTML básico con campos de texto, email y textarea."
+  },
+
+  "Tabla básica": {
+    "prefix": "tabla!",
+    "body": [
+      "<table>",
+      "    <thead>",
+      "        <tr>",
+      "            <th>ID</th>",
+      "            <th>Nombre</th>",
+      "            <th>Precio</th>",
+      "            <th>Cantidad</th>",
+      "        </tr>",
+      "    </thead>",
+      "    <tbody>",
+      "        <tr>",
+      "            <td>1</td>",
+      "            <td>Producto A</td>",
+      "            <td>10€</td>",
+      "            <td>5</td>",
+      "        </tr>",
+      "    </tbody>",
+      "</table>"
+    ],
+    "description": "Tabla HTML básica con cabecera y una fila de ejemplo."
+  }
+}

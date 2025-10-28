@@ -1,0 +1,47 @@
+{
+  "Condicion POST": {
+    "prefix": "request",
+    "body": [
+      "if ($_SERVER[\"REQUEST_METHOD\"] == \"POST\") {",
+      "\t",
+      "}"
+    ],
+    "description": "Estructura básica para comprobar si el formulario fue enviado por POST."
+  },
+
+  "Variable usuario": {
+    "prefix": "recogeme",
+    "body": [
+      "$usuario = htmlspecialchars(trim($_POST['name'] ?? ''));"
+    ],
+    "description": "Asigna y limpia el valor del campo 'name' del formulario."
+  },
+
+  "Abrir fichero": {
+    "prefix": "openfile",
+    "body": [
+      "$fichero = fopen($ruta, \"r\");"
+    ],
+    "description": "Abre un fichero en modo lectura."
+  },
+
+  "Error usuario": {
+    "prefix": "error",
+    "body": [
+      "<?php if (!empty($errores['usuarioV'])) : ?>",
+      "\t<br /><span class=\"error\"><?= $errores['usuarioV'] ?></span>",
+      "<?php endif; ?>"
+    ],
+    "description": "Muestra mensaje de error si el usuario no es válido."
+  },
+
+  "Mensaje exito": {
+    "prefix": "successmsg",
+    "body": [
+      "<?php if ($mensaje) : ?>",
+      "\t<p class=\"success\"><?= $mensaje ?></p>",
+      "<?php endif; ?>"
+    ],
+    "description": "Muestra mensaje de éxito cuando la variable $mensaje tiene contenido."
+  }
+}
